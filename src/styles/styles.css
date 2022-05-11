@@ -1,0 +1,125 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    max-width: 1280px;
+    max-height: 100vh;
+    margin: 0 auto;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.logo {
+    background-image: url("../assets/Plarson");
+    background-size: cover;
+    margin: 0 auto;
+    height: 80px;
+    width: 240px;
+    flex: none;
+}
+
+.chat_interface {
+    display: flex;
+    flex-direction: column;
+    max-height: 700px;
+    justify-content: space-between;
+    border-radius: 20px;
+    background-color: #1F1D19;
+}
+
+.header {
+    display: flex;
+    flex: none;
+    height: 50px;
+    width: 100%;
+    overflow: auto;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    width: 100%;
+    height: 550px;
+}
+
+.users {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.chat {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.list_users {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    flex: 1;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    overflow-y: auto;
+}
+
+.user {
+    display: flex;
+    padding: 5px;
+    box-sizing: border;
+    align-items: center;
+    min-height: 40px;
+    margin-top: 5px;
+    width: 90%;
+    background-color: #4D4B47;
+    border-radius: 5px;
+}
+
+.footer {
+    display: flex;
+    height: 100px;
+    flex: none;
+    overflow: auto;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    justify-content: end;
+}
+
+.input_message {
+    width: calc(100% - 230px);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.message {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.message__text {
+    order: 1;
+    display: inline-block;
+    padding: 5px;
+    background: green;
+    color: #fff;
+    border-radius: 4px;
+    max-width: 50%;
+}
+
+.message_client {
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.message_client .message__text {
+    background: red;
+}
